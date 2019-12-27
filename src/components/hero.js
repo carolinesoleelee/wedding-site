@@ -22,7 +22,6 @@ const hero = () => {
               }
             }
       `);
-console.log(frontmatter.images.childImageSharp.fluid)
     return (
         <StyledContainer>
         <ContentContainer>
