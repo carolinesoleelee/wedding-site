@@ -18,7 +18,7 @@ const ContentContainer = styled.div`
     margin: 0 auto;
     max-width: 700px;
     text-align: center;
-    padding: 60px 0;
+    padding: 80px 0;
 `
 
 const StyledContainer = styled.div`
