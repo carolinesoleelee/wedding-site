@@ -36,10 +36,14 @@ const StyledEyebrow = styled.p`
     font-size: 20px;
     font-weight: 100;
     color: black;
+    font-family: Calibre-Light;
+    line-height: 29px;
+    padding: 0 70px;
 `
 
 const StyledHeader = styled.h1`
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 500;
     color: black;
+    font-family: Canela-thin;
 `

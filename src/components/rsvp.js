@@ -6,7 +6,7 @@ const registry = () => {
         <StyledContainer>
             <ContentContainer>
         <StyledHeader >We hope you’ll join us on this special day</StyledHeader > 
-        <button>RSVP</button>
+        <StyledButton>RSVP</StyledButton>
         </ContentContainer>
         </StyledContainer>
     )
@@ -31,4 +31,16 @@ const ContentContainer = styled.div`
 const StyledHeader = styled.h1`
     font-size: 60px;
     font-weight: 400;
+    font-family: Canela-thin;
+    line-height: 80px;
+`
+
+const StyledButton = styled.button`
+    background-color: white;
+    border-color: white;
+    border-radius: 5px;
+    padding: 10px 24px 8px;
+    font-family: Calibre-SemiBold;
+    letter-spacing: 3px;
+    font-size: 16px;
 `

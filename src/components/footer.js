@@ -17,7 +17,7 @@ const ContentContainer = styled.div`
     margin: 0 auto;
     max-width: 1100px;
     text-align: center;
-    padding: 60px 0;
+    padding: 60px 0 30px;;
 `
 
 const StyledContainer = styled.div`
@@ -32,7 +32,8 @@ const StyledEyebrow = styled.p`
 `
 
 const StyledHeader = styled.h1`
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 27px;
+    font-weight: 100;
     color: black;
+    font-family: Canela-Thin;
 `

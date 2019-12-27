@@ -621,6 +621,15 @@ pre tt:after {
   }
 }
 
+@font-face {
+	font-family: 'Calibre-Light';
+	src: url('../fonts/Calibre-Light.eot');
+	src: url('../fonts/Calibre-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Calibre-Light.woff') format('woff'),
+		url('../fonts/Calibre-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
 
 @font-face {
   font-family: 'Calibre-Medium';
@@ -630,6 +639,16 @@ pre tt:after {
        url('../fonts/Calibre-Medium.woff')  format('truetype'); /* Safari, Android, iOS */
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face{
+	font-family: "Calibre-SemiBold";
+	src: url("../fonts/Calibre-SemiBold.eot");
+	src: url("../fonts/Calibre-SemiBold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/Calibre-SemiBold.woff") format("woff"),
+	url("../fonts/Calibre-SemiBold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
@@ -649,5 +668,14 @@ pre tt:after {
       url('../fonts/Canela-Thin.woff') format('woff'),
       url('../fonts/Canela-Thin.ttf') format('truetype');
   font-weight: 100;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Canela-Regular';
+  src: url('../fonts/Canela-Regular.woff2') format('woff2'),
+      url('../fonts/Canela-Regular.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }

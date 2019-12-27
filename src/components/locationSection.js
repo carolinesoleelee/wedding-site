@@ -15,6 +15,7 @@ const locationSection = () => {
         <StyledDetail>Reception: 7pm—11pm</StyledDetail>
         </StyledIndContainer>
 
+<Line>
         <StyledIndContainer>
         <StyledEyebrow>WHERE</StyledEyebrow>
         <StyledTitle>
@@ -23,6 +24,7 @@ const locationSection = () => {
         <StyledDetail>8600 Foundry Street</StyledDetail>
         <StyledDetail>Savage, MD 20763</StyledDetail>
         </StyledIndContainer>
+        </Line>
 </StyledGridContainer>
 </ContentContainer>
 </StyledContainer>
@@ -51,6 +53,10 @@ const StyledGridContainer = styled.div`
 
 const StyledIndContainer = styled.div`
     padding: 0 10px;
+`
+
+const Line = styled.span`
+    border-left: white solid 1px;
 `
 
 const StyledEyebrow = styled.p`
