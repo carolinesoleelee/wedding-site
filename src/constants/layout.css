@@ -620,3 +620,23 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+@font-face {
+  font-family: 'Calibre-Medium';
+  src: url('../fonts/Calibre-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Calibre-Medium.otf') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Calibre-Medium.ttf') format('woff'), /* Modern Browsers */
+       url('../fonts/Calibre-Medium.woff')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'Calibre';
+	src: url('../fonts/Calibre-Regular.eot');
+	src: url('../fonts/Calibre-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Calibre-Regular.woff') format('woff'),
+		url('../fonts/Calibre-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
