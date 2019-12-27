@@ -47,4 +47,12 @@ const StyledButton = styled.a`
     text-decoration: none;
     font-weight: 600;
     color: black;
+    opacity: 1;
+    transition: opacity .10s ease-in-out;
+-moz-transition: opacity .10s ease-in-out;
+-webkit-transition: opacity .10s ease-in-out;
+
+    &:hover {
+        opacity: .75;
+    }
 `
