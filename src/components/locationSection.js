@@ -96,6 +96,7 @@ const StyledTitle = styled.h1`
     ${lessThan.tablet} {
         font-size: 20px;
         padding-bottom: 0px;
+        font-weight: 600;
     }
 `
 

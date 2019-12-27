@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { lessThan } from '../constants/mediaQ';
 
 const registry = () => {
     return (
@@ -41,6 +42,10 @@ const StyledContainer = styled.div`
     padding-bottom: 100px;
     margin: 0 100px;
 
+    ${lessThan.tablet} {
+        margin: 0 45px;
+    }
+
 `
 
 const StyledInd = styled.div`
@@ -49,7 +54,7 @@ transition: color .23s ease-in-out;
 -moz-transition: color .23s ease-in-out;
 -webkit-transition: color .23s ease-in-out;
 
-    max-width: 150px;
+    max-width: 50px;
     position: relative;
 left: 50%;
 -webkit-transform: translateX(-50%);
@@ -67,7 +72,7 @@ color: #565656;
 transition: color .23s ease-in-out;
 -moz-transition: color .23s ease-in-out;
 -webkit-transition: color .23s ease-in-out;
-    max-width: 150px;
+    max-width: 50px;
 
     position: relative;
 left: 50%;
@@ -85,7 +90,7 @@ color: #565656;
 transition: color .23s ease-in-out;
 -moz-transition: color .23s ease-in-out;
 -webkit-transition: color .23s ease-in-out;
-    max-width: 150px;
+    max-width: 50px;
     position: relative;
 left: 50%;
 -webkit-transform: translateX(-50%);
@@ -105,6 +110,12 @@ const StyledEyebrow = styled.p`
     font-family: Calibre-Light;
     line-height: 29px;
     padding: 0 70px;
+
+    ${lessThan.tablet} {
+    font-size: 17px;
+    line-height: 25px;
+    padding: 0px 38px;
+    }
 `
 
 const StyledHeader = styled.h1`
@@ -112,4 +123,8 @@ const StyledHeader = styled.h1`
     font-weight: 500;
     color: black;
     font-family: Canela-thin;
+
+    ${lessThan.tablet} {
+    font-size: 35px;
+    }
 `
