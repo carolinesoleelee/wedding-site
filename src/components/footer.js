@@ -1,12 +1,26 @@
 import React from 'react';
 import styled from 'styled-components'
+import { lessThan } from '../constants/mediaQ';
 
 const footer = () => {
     return (
         <ContentContainer>
             <StyledHeader>
-            Caroline & Chris     |     Saturday, March 7, 2020     |     6:00pm     |     The Great Room at Historic Savage Mill
-            </StyledHeader>
+            Caroline & Chris     |   
+            </StyledHeader>        
+            
+            <StyledHeader>
+            Saturday, March 7, 2020     | 
+            </StyledHeader> 
+            
+            <StyledHeader>
+            6:00pm     |
+            </StyledHeader>      
+            
+            <StyledHeader>
+            The Great Room at Historic Savage Mill
+            </StyledHeader>      
+
         </ContentContainer>
     )
 }
@@ -31,9 +45,15 @@ const StyledEyebrow = styled.p`
     color: black;
 `
 
-const StyledHeader = styled.h1`
+const StyledHeader = styled.span`
     font-size: 27px;
     font-weight: 100;
     color: black;
     font-family: Canela-Thin;
+
+
+    ${lessThan.tablet} {
+        font-size: 19px;
+        padding: 0 10px;
+    }
 `
