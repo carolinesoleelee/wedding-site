@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'; 
+import { lessThan } from '../constants/mediaQ';
 
 const hero = () => {
 
@@ -47,6 +48,10 @@ const StyledContainer = styled.div`
     background-image: url('/static/b9930882c55cc48cac44a2740a4079b3/2baa7/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+
+    ${lessThan.tablet} {
+        background-position: center;
+    }
 `
 
 
@@ -57,6 +62,11 @@ const StyledEyebrow = styled.p`
     line-height: 29px;
     padding: 15px 70px;
     color: white;
+
+    ${lessThan.tablet} {
+        line-height: 0px;
+        padding: 5px 70px;
+    }
 `
 
 const StyledHeader = styled.h1`
@@ -65,4 +75,8 @@ const StyledHeader = styled.h1`
     font-family: Canela-thin;
     line-height: 120px;
     color: white;
+    ${lessThan.tablet} {
+        font-size: 55px;
+        line-height: 60px;
+    }
 `

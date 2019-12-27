@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { lessThan } from '../constants/mediaQ';
 
 const secondSection = () => {
     return (
@@ -45,4 +46,11 @@ const StyledHeader = styled.h1`
     white-space: pre-wrap;
     font-size: 2.35rem;
     line-height: 1.5136;
+
+
+    ${lessThan.tablet} {
+        font-size: 1.35rem;
+        padding: 45px;
+
+    }
 `

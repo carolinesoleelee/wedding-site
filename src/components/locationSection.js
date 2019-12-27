@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { lessThan } from '../constants/mediaQ';
 
 const locationSection = () => {
     return (
@@ -43,12 +44,21 @@ const ContentContainer = styled.div`
     max-width: 950px;
     text-align: center;
     padding: 200px 0;
+
+    ${lessThan.tablet} {
+        padding: 50px 20px;
+    }
 `
 
 const StyledGridContainer = styled.div`
     display: grid;
     grid-template-columns: 46% 54%;
     grid-gap: 25px;
+
+    ${lessThan.tablet} {
+        grid-template-columns: 100%;
+        padding: 0 0px 50px;
+    }
 `
 
 const StyledIndContainer = styled.div`
@@ -57,6 +67,11 @@ const StyledIndContainer = styled.div`
 
 const Line = styled.span`
     border-left: white solid 1px;
+
+    ${lessThan.tablet} {
+        border-top: white solid 1px;
+        border-left: white solid 0px;
+    }
 `
 
 const StyledEyebrow = styled.p`
@@ -64,6 +79,11 @@ const StyledEyebrow = styled.p`
     font-size: 15px;
     letter-spacing: 1px;
     padding-bottom: 14px;
+
+    ${lessThan.tablet} {
+    padding-top: 45px;
+    padding-bottom: 5px;
+    }
 `
 
 const StyledTitle = styled.h1`
@@ -72,6 +92,11 @@ const StyledTitle = styled.h1`
     font-weight: 500;
     letter-spacing: .5px;
     padding-bottom: 14px;
+
+    ${lessThan.tablet} {
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
 `
 
 const StyledDetail = styled.p`
@@ -81,4 +106,9 @@ const StyledDetail = styled.p`
     font-weight: 500;
     letter-spacing: .5px;
     margin: 0px;
+
+    ${lessThan.tablet} {
+        font-size: 15px;
+        line-height: 17px;
+    }
 `
