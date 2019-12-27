@@ -14,13 +14,13 @@ const SecondPage = () => (
     <Copy>We look forward to seeing you! In order to manage the guest count, we have reserved additional guest spots for couples that are engaged or married only. If you have specific dietary restrictions, please make sure it’s noted below. </Copy>
     <Copy><strong>Please RSVP by January 20, 2020</strong></Copy>
 
-    {/* <form method="post" name="RSVP Response" netlify>
+    <form name="RSVP Response" method="POST" data-netlify="true">
             <label for='First Name'>First Name</label>
             <input type="text" id="firstname" name="firstname"></input>
-            <label for='Email'>Email</label>
-            <input type="text" id="email" name="email"></input>
-    <button type="submit">Send</button>
-`</form> */}
+            <label for='email'>Email</label>
+            <input type="text" id="emailinput" name="emailinput"></input>
+        <button type="submit">Send</button>
+    </form>
     </ContentContainer>
 </Container>
   </Layout>
