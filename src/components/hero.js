@@ -1,7 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
+import { graphql, useStaticQuery } from 'gatsby'; 
 
 const hero = () => {
+
+    const {
+        markdownRemark: { frontmatter },
+      } = useStaticQuery(graphql`
+        query {
+            markdownRemark(frontmatter: {section: {eq: "Image"}}) {
+                frontmatter {
+                  images {
+                    childImageSharp {
+                        fluid {
+                          ...GatsbyImageSharpFluid
+                        }
+                      }
+                  }
+                } 
+              }
+            }
+      `);
+console.log(frontmatter.images.childImageSharp.fluid)
     return (
         <StyledContainer>
         <ContentContainer>
@@ -15,7 +35,6 @@ const hero = () => {
 
 export default hero;
 
-
 const ContentContainer = styled.div`
     margin: 0 auto;
     max-width: 350px;
@@ -25,7 +44,9 @@ const ContentContainer = styled.div`
 `
 
 const StyledContainer = styled.div`
-    background-color: black;
+    background-image: url('/static/b9930882c55cc48cac44a2740a4079b3/2baa7/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 `
 
 
