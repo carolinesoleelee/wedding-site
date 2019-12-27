@@ -27,7 +27,7 @@ const StyledContainer = styled.div`
 
 
 const StyledEyebrow = styled.p`
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 100;
     color: black;
     text-transform: uppercase;
@@ -36,12 +36,12 @@ const StyledEyebrow = styled.p`
 `
 
 const StyledHeader = styled.h1`
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     letter-spacing: 0em;
     text-transform: none;
     color: black;
-    font-family: Calibre;
+    font-family: Canela-thin;
     white-space: pre-wrap;
     font-size: 2.35rem;
     line-height: 1.5136;

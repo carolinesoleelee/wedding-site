@@ -631,12 +631,23 @@ pre tt:after {
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-	font-family: 'Calibre';
-	src: url('../fonts/Calibre-Regular.eot');
-	src: url('../fonts/Calibre-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Calibre-Regular.woff') format('woff'),
-		url('../fonts/Calibre-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Canela-Light";
+  src: url("../fonts/Canela-Light.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Canela-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Canela-Light.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Canela-Light.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Canela-Light.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Canela-thin';
+  src: url('../fonts/Canela-Thin.eot');
+  src: url('../fonts/Canela-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Canela-Thin.woff2') format('woff2'),
+      url('../fonts/Canela-Thin.woff') format('woff'),
+      url('../fonts/Canela-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
 }
