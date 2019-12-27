@@ -8,13 +8,17 @@ const SecondPage = () => (
   <Layout>
     <SEO title="Page two" />
     <Container >
+      <div>
     <Header>Our Wedding Party</Header>
+    </div>
 <PeopleContainer>
     <div>
       <Title >Groomsmen</Title >
       <GridContainer>
 
-        <IndGrid >what</IndGrid >
+        <IndGrid >
+          <img src={`../images/leaf-pattern.jpg`} />
+         </IndGrid >
         <IndGrid >what</IndGrid >
         <IndGrid >what</IndGrid >
         <IndGrid >what</IndGrid >
@@ -45,6 +49,10 @@ export default SecondPage
 const Container = styled.div`
   text-align: center;
 
+`
+
+const Image = styled.div`
+  background-image: url(${`../images/leaf-pattern.jpg`});
 `
 
 const Header = styled.h1`
