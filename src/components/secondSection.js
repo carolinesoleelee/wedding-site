@@ -20,6 +20,10 @@ const ContentContainer = styled.div`
     max-width: 700px;
     text-align: center;
     padding: 80px 0;
+
+    ${lessThan.tablet} {
+    padding: 130px 0px 105px;
+    }
 `
 
 const StyledContainer = styled.div`
@@ -50,7 +54,7 @@ const StyledHeader = styled.h1`
 
     ${lessThan.tablet} {
         font-size: 1.35rem;
-        padding: 45px;
+        padding:  0 45px 45px;
 
     }
 `

@@ -46,7 +46,7 @@ const ContentContainer = styled.div`
     padding: 200px 0;
 
     ${lessThan.tablet} {
-        padding: 50px 20px;
+        padding: 80px 20px;
     }
 `
 
@@ -94,7 +94,7 @@ const StyledTitle = styled.h1`
     padding-bottom: 14px;
 
     ${lessThan.tablet} {
-        font-size: 20px;
+        font-size: 28px;
         padding-bottom: 0px;
         font-weight: 600;
     }
@@ -109,7 +109,7 @@ const StyledDetail = styled.p`
     margin: 0px;
 
     ${lessThan.tablet} {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 17px;
     }
 `
