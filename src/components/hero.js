@@ -3,12 +3,13 @@ import styled from 'styled-components'
 
 const hero = () => {
     return (
+        <StyledContainer>
         <ContentContainer>
-            
         <StyledEyebrow>March 7th, 2020</StyledEyebrow>
         <StyledHeader>Caroline & Chris</StyledHeader> 
         <StyledEyebrow>We’re Getting Married! </StyledEyebrow>  
         </ContentContainer>
+        </StyledContainer>
     )
 }
 
@@ -19,11 +20,12 @@ const ContentContainer = styled.div`
     margin: 0 auto;
     max-width: 350px;
     text-align: center;
-    padding: 100px 0;
+    min-height: 100vh;
+    padding-top: 245px;
 `
 
 const StyledContainer = styled.div`
-    background-color: white;
+    background-color: black;
 `
 
 
@@ -32,7 +34,7 @@ const StyledEyebrow = styled.p`
     font-weight: 600;
     font-family: Canela-thin;
     line-height: 29px;
-    padding: 0 70px;
+    padding: 15px 70px;
     color: white;
 `
 
@@ -40,5 +42,6 @@ const StyledHeader = styled.h1`
     font-size: 90px;
     font-weight: 600;
     font-family: Canela-thin;
+    line-height: 120px;
     color: white;
 `
