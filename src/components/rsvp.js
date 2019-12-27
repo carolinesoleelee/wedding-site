@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { lessThan } from '../constants/mediaQ';
 
 const registry = () => {
     return (
@@ -34,6 +35,13 @@ const StyledHeader = styled.h1`
     font-weight: 400;
     font-family: Canela-thin;
     line-height: 80px;
+
+
+    ${lessThan.tablet} {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
 `
 
 const StyledButton = styled.a`

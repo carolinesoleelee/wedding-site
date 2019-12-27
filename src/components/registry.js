@@ -40,7 +40,7 @@ const StyledContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 100px;
-    margin: 0 100px;
+    margin: 0 260px;
 
     ${lessThan.tablet} {
         margin: 0 45px;
@@ -54,7 +54,7 @@ transition: color .23s ease-in-out;
 -moz-transition: color .23s ease-in-out;
 -webkit-transition: color .23s ease-in-out;
 
-    max-width: 50px;
+    max-width: 150px;
     position: relative;
 left: 50%;
 -webkit-transform: translateX(-50%);
@@ -65,6 +65,10 @@ transform: translateX(-50%);
         color: orange;
     }
 
+    ${lessThan.tablet} {
+        max-width: 50px;
+    }
+
 `
 
 const StyledInd2 = styled.div`
@@ -72,7 +76,7 @@ color: #565656;
 transition: color .23s ease-in-out;
 -moz-transition: color .23s ease-in-out;
 -webkit-transition: color .23s ease-in-out;
-    max-width: 50px;
+    max-width: 150px;
 
     position: relative;
 left: 50%;
@@ -84,13 +88,17 @@ transform: translateX(-50%);
         color: #b1cde6;
     }
 
+    ${lessThan.tablet} {
+        max-width: 50px;
+    }
+
 `
 const StyledInd3 = styled.div`
 color: #565656;
 transition: color .23s ease-in-out;
 -moz-transition: color .23s ease-in-out;
 -webkit-transition: color .23s ease-in-out;
-    max-width: 50px;
+    max-width: 150px;
     position: relative;
 left: 50%;
 -webkit-transform: translateX(-50%);
@@ -101,6 +109,9 @@ transform: translateX(-50%);
         color: #4793c9;
     }
 
+    ${lessThan.tablet} {
+        max-width: 50px;
+    }
 `
 
 const StyledEyebrow = styled.p`
