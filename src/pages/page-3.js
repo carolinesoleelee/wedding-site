@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from 'styled-components'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { lessThan } from '../constants/mediaQ';
 
 const SecondPage = () => (
   <Layout>
@@ -10,8 +11,8 @@ const SecondPage = () => (
 <Container>
     <ContentContainer>
     <Title>R S V P</Title>
-    <p>We look forward to seeing you! In order to manage the guest count, we have reserved additional guest spots for couples that are engaged or married only. If you have specific dietary restrictions, please make sure it’s noted below. </p>
-    <p><strong>Please RSVP by January 20, 2020</strong></p>
+    <Copy>We look forward to seeing you! In order to manage the guest count, we have reserved additional guest spots for couples that are engaged or married only. If you have specific dietary restrictions, please make sure it’s noted below. </Copy>
+    <Copy><strong>Please RSVP by January 20, 2020</strong></Copy>
 
     {/* <form method="post" name="RSVP Response" netlify>
             <label for='First Name'>First Name</label>
@@ -44,4 +45,11 @@ const Title = styled.h1`
     font-family: Canela-thin;
     font-size: 50px;
     font-weight: 100;
+`
+
+const Copy = styled.p`
+    ${lessThan.tablet} {
+        font-size: 20px;
+        padding: 0 35px;
+    }
 `
