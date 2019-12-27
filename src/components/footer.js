@@ -31,8 +31,12 @@ const ContentContainer = styled.div`
     margin: 0 auto;
     max-width: 1100px;
     text-align: center;
-    padding: 60px 0 30px;;
-`
+    padding: 60px 0 30px;
+
+    ${lessThan.tablet} {
+        padding: 40px 0 30px;
+    }
+}`
 
 const StyledContainer = styled.div`
     background-color: white;
