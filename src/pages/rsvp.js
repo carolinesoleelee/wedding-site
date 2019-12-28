@@ -14,7 +14,7 @@ const SecondPage = () => (
     <Copy>We look forward to seeing you! In order to manage the guest count, we have reserved additional guest spots for couples that are engaged or married only. If you have specific dietary restrictions, please make sure it’s noted below. </Copy>
     <Copy><strong>Please RSVP by January 20, 2020</strong></Copy>
 
-    <form name="RSVP Response" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+    <form name="response" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="response" />
             
@@ -50,7 +50,7 @@ export default SecondPage
 const Container = styled.div`
     background-color: rgb(185, 162, 119);
     color: white;
-    padding: 300px 0 80px;
+    padding: 150px 0 80px;
 `
 
 const ContentContainer = styled.div`
