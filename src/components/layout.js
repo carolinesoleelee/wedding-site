@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Hero from "./hero"
+import Navbar from "./Navbar/index"
 import Footer from "./footer"
 import '../constants/layout.css';
 
@@ -9,6 +9,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <div>
+        <Navbar />
         <main>{children}</main>
       <Footer />
       </div>
