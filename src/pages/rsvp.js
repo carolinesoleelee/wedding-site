@@ -14,22 +14,36 @@ const SecondPage = () => (
     <Copy>We look forward to seeing you! In order to manage the guest count, we have reserved additional guest spots for couples that are engaged or married only. If you have specific dietary restrictions, please make sure it’s noted below. </Copy>
     <Copy><strong>Please RSVP by January 20, 2020</strong></Copy>
 
-    <form name="RSVP Response" enctype="multipart/form-data" id="RSVP Response Form" accept-charset="UTF-8"  method="POST" data-netlify="true">
-            
-    <div class="field" id="webform-component-name">
-            <label for='First Name'>First Name</label>
-            <input type="text" id="firstname" name="firstname"></input>
-    </div>
+    <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+  <input type="hidden" name="bot-field" />
+  <input type="hidden" name="form-name" value="contact" />
+  <div className="field half first">
+    <label htmlFor="name">Name</label>
+    <input type="text" name="name" id="name" />
+  </div>
+  <div className="field half">
+    <label htmlFor="email">Email</label>
+    <input type="text" name="email" id="email" />
+  </div>
+  <div className="field">
+    <label htmlFor="message">Message</label>
+    <textarea name="message" id="message" rows="6" />
+  </div>
+  <ul className="actions">
+    <li>
+      <input type="submit" value="Send Message" className="special" />
+    </li>
+    <li>
+      <input type="reset" value="Clear" />
+    </li>
+  </ul>
+</form>
 
-    <div class="field" id="webform-component-email">
-            <label for='email'>Email</label>
-            <input type="text" id="emailinput" name="emailinput"></input>
-    </div>
-    <button class="secondary button radius form-submit" id="edit-submit" name="op" value="Submit" type="submit">Send</button>
-    </form>
+
+
     </ContentContainer>
 </Container>
-  </Layout>
+  </Layout> 
 )
 
 export default SecondPage
