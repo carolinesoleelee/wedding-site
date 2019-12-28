@@ -33,6 +33,12 @@ const SecondPage = () => (
                 <StyledTextbox name="message" id="message" rows="6" />
             </StyledInputContainer>
 
+
+            <select className="field last">
+                <option  htmlFor="yes">Yes</option>
+                <option htmlFor="no">No</option>
+            </select>
+
             <div className="actions">
                 <StyledButton type="submit" value="Send Message" className="special" />
             </div>
