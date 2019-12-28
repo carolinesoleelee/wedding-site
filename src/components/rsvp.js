@@ -8,7 +8,7 @@ const registry = () => {
             <ContentContainer>
         <StyledHeader >We hope you’ll join us on this special day</StyledHeader > 
 
-        <StyledButton href="/page-3">RSVP</StyledButton>
+        <StyledButton href="/rsvp">RSVP</StyledButton>
         </ContentContainer>
         </StyledContainer>
     )
