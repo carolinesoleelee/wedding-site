@@ -34,7 +34,7 @@ const SecondPage = () => (
             </StyledInputContainer>
 
             <div className="actions">
-                <input type="submit" value="Send Message" className="special" />
+                <StyledButton type="submit" value="Send Message" className="special" />
             </div>
     </form>
 
@@ -81,7 +81,7 @@ const Copy = styled.p`
 const StyledInput = styled.input`
     height: 45px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 2px;
     border-color: white;
     padding-left: 10px;
     border: none;
@@ -93,14 +93,23 @@ const StyledInput = styled.input`
 const StyledTextbox = styled.textarea`
     height: 150px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 2px;
     border-color: white;
     padding-left: 10px;
     border: none;
 `
 
 const StyledInputContainer = styled.div`
-    margin-top: 20px;
+    margin: 20px;
     position: relative;
     text-align: left;
+`
+
+const StyledButton = styled.input`
+    background-color: white;
+    color: black;
+    border-color: white;
+    border-radius: 2px;
+    padding: 5px 30px;
+
 `
