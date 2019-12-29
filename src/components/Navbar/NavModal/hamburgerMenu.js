@@ -1,43 +1,36 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
-
-
+import styled, { css } from 'styled-components';
 
 const HamburgerMenu = props => {
   return (
     <ModalContainer active={props.active}>
       <ModalContent>
         <ModalHeader>
-
-            <StyledHeaderInd>
-                Take me to...
-            </StyledHeaderInd>
+          <StyledHeaderInd>Take me to...</StyledHeaderInd>
         </ModalHeader>
 
-
         <Test>
-            <StyledContentInd key="" href="/rsvp">
-                RSVP
-            </StyledContentInd>
-            <StyledContentInd key="" href="">
-                Our Story
-            </StyledContentInd>
-            <StyledContentInd key="" href="/wedding-party">
-                Wedding Party
-            </StyledContentInd>
-            <StyledContentInd key="" href="">
-                FAQ
-            </StyledContentInd>
-            <StyledContentInd key="" href="/">
-                Back to Home
-            </StyledContentInd>
+          <StyledContentInd key="" href="/rsvp">
+            RSVP
+          </StyledContentInd>
+          <StyledContentInd key="" href="">
+            Our Story
+          </StyledContentInd>
+          <StyledContentInd key="" href="/wedding-party">
+            Wedding Party
+          </StyledContentInd>
+          <StyledContentInd key="" href="">
+            FAQ
+          </StyledContentInd>
+          <StyledContentInd key="" href="/">
+            Back to Home
+          </StyledContentInd>
         </Test>
       </ModalContent>
     </ModalContainer>
   );
 };
 export default HamburgerMenu;
-
 
 const ModalContainer = styled.div`
   display: block;
@@ -49,7 +42,7 @@ const ModalContainer = styled.div`
   z-index: 2;
   transform: translateY(-110%);
   transition: transform 0.3s ease-in-out;
-  ${({active}) =>
+  ${({ active }) =>
     active &&
     css`
       transform: translateY(0);
@@ -97,7 +90,7 @@ const StyledContentInd = styled.a`
   letter-spacing: 5px;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.5s linear 0s,background-color 0.4s ease-in-out 0s;
+  transition: color 0.5s linear 0s, background-color 0.4s ease-in-out 0s;
 
   &:hover {
     background-color: #b9a277c4;
@@ -106,4 +99,4 @@ const StyledContentInd = styled.a`
     background-size: cover;
     color: white;
   }
-`; 
+`;

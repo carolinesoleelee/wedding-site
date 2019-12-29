@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'; 
 import { lessThan } from '../constants/mediaQ';
+import { format } from 'url';
 
 const hero = () => {
 
@@ -11,7 +12,7 @@ const hero = () => {
         query {
             markdownRemark(frontmatter: {section: {eq: "Image"}}) {
                 frontmatter {
-                  images {
+                  headerImage {
                     childImageSharp {
                         fluid {
                           ...GatsbyImageSharpFluid
@@ -22,6 +23,8 @@ const hero = () => {
               }
             }
       `);
+
+      console.log(frontmatter.headerImage.childImageSharp)
     return (
         <StyledContainer>
         <ContentContainer>
