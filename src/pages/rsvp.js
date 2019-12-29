@@ -34,10 +34,10 @@ const SecondPage = () => (
             </StyledInputContainer>
 
 
-            <select className="field last">
+            <StyledSelect className="field last">
                 <option  htmlFor="yes">Yes</option>
                 <option htmlFor="no">No</option>
-            </select>
+            </StyledSelect>
 
             <div className="actions">
                 <StyledButton type="submit" value="Send Message" className="special" />
@@ -103,6 +103,12 @@ const StyledTextbox = styled.textarea`
     border-color: white;
     padding-left: 10px;
     border: none;
+`
+
+const StyledSelect = styled.select`
+    border-radius: 2px;
+    border-color: white;
+    margin: 8px 0 25px;
 `
 
 const StyledInputContainer = styled.div`

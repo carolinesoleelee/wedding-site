@@ -13,6 +13,7 @@ const StyledHamburgerLogo = styled.button`
   border-radius: 100%;
   cursor: pointer;
   position: fixed;
+  outline: none;
   display: block;
   z-index: 3;
   top: 30px;
