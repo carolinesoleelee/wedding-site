@@ -42,9 +42,7 @@ export default HamburgerMenu;
 const ModalContainer = styled.div`
   display: block;
   height: 100%;
-  left: 0;
   position: fixed;
-  top: 0;
   width: 100%;
   background-color: white;
   text-align: center;

@@ -19,13 +19,26 @@ const SecondPage = () => (
             <input type="hidden" name="form-name" value="response" />
             
             <StyledInputContainer className="field half first">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Name *</label>
                 <StyledInput type="text" name="name" id="name" />
             </StyledInputContainer>
 
             <StyledInputContainer className="field half">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="plusone">Email *</label>
                 <StyledInput type="text" name="email" id="email" />
+            </StyledInputContainer>
+
+            <StyledInputContainer className="field half half">
+                <label htmlFor="attending">Will you be attending? *</label><br />
+                <StyledSelect className="field last">
+                        <option  htmlFor="yes">Yes</option>
+                        <option htmlFor="no">No</option>
+                </StyledSelect>
+            </StyledInputContainer>
+
+            <StyledInputContainer className="field half">
+                <label htmlFor="plusone">Will you be bringing any guests? (See <a href="/FAQ">FAQ</a>) *</label>
+                <StyledInput type="text" name="plusone" id="plusone" />
             </StyledInputContainer>
 
             <StyledInputContainer className="field">
@@ -33,11 +46,6 @@ const SecondPage = () => (
                 <StyledTextbox name="message" id="message" rows="6" />
             </StyledInputContainer>
 
-
-            <StyledSelect className="field last">
-                <option  htmlFor="yes">Yes</option>
-                <option htmlFor="no">No</option>
-            </StyledSelect>
 
             <div className="actions">
                 <StyledButton type="submit" value="Send Message" className="special" />
@@ -91,8 +99,7 @@ const StyledInput = styled.input`
     border-color: white;
     padding-left: 10px;
     border: none;
-
-
+    margin-top: 5px;
 `
 
 
@@ -103,18 +110,19 @@ const StyledTextbox = styled.textarea`
     border-color: white;
     padding-left: 10px;
     border: none;
+    margin-top: 5px;
 `
 
 const StyledSelect = styled.select`
     border-radius: 2px;
     border-color: white;
-    margin: 8px 0 25px;
+    text-align: left;
 `
 
 const StyledInputContainer = styled.div`
-    margin: 20px;
     position: relative;
     text-align: left;
+    margin-bottom: 20px;
 `
 
 const StyledButton = styled.input`

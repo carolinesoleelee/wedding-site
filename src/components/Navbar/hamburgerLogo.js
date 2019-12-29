@@ -4,8 +4,6 @@ import {HamburgerLogoIcon} from '../../icons/svgs';
 import HamburgerMenu from './NavModal/hamburgerMenu';
 
 const StyledHamburgerLogo = styled.button`
-  transform: translateY(0px);
-  transition: transform 0.2s ease-in-out 0.1s;
   left: calc(100vw - 85px);
   background: transparent;
   border-color: transparent;
