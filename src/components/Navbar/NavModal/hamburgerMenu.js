@@ -87,7 +87,6 @@ const StyledContentInd = styled.a`
   border-top: 1px solid rgba(67, 69, 77, 0.1);
   font-size: 35px;
   font-family: Canela-thin;
-  letter-spacing: 5px;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.5s linear 0s, background-color 0.4s ease-in-out 0s;

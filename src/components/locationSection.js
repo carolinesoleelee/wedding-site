@@ -81,6 +81,7 @@ const StyledEyebrow = styled.p`
   font-size: 15px;
   letter-spacing: 1px;
   padding-bottom: 14px;
+  letter-spacing: 0.2em;
 
   ${lessThan.tablet} {
     padding-top: 45px;
@@ -89,11 +90,12 @@ const StyledEyebrow = styled.p`
 `;
 
 const StyledTitle = styled.h1`
-  font-family: Canela-thin;
+  font-family: Canela-light;
   font-size: 40px;
   font-weight: 500;
   letter-spacing: 0.5px;
   padding-bottom: 14px;
+  line-height: 50px;
 
   ${lessThan.tablet} {
     font-size: 28px;
@@ -103,7 +105,7 @@ const StyledTitle = styled.h1`
 `;
 
 const StyledDetail = styled.p`
-  font-family: Canela-thin;
+  font-family: Canela-light;
   font-size: 25px;
   line-height: 35px;
   font-weight: 500;

@@ -159,35 +159,46 @@ const SecondPage = () => {
           <Title>Bridesmaids</Title>
           <GridContainer>
             <IndGrid>
-              <Img fluid={frontmatter.youlee.childImageSharp.fluid} />
+              <ImageContainer>
+                {' '}
+                <Img fluid={frontmatter.youlee.childImageSharp.fluid} />
+              </ImageContainer>
               <TitleDesc>Youlee Yu</TitleDesc>
               <CopyDesc>MATRON OF HONOR</CopyDesc>
               <CopyDesc>Mom of the group</CopyDesc>
               <CopyDesc>also ACTUAL MOM</CopyDesc>
             </IndGrid>
             <IndGrid>
-              <Img fluid={frontmatter.jessica.childImageSharp.fluid} />
+              <ImageContainer>
+                <Img fluid={frontmatter.jessica.childImageSharp.fluid} />
+              </ImageContainer>
               <TitleDesc>Jessica Han</TitleDesc>
               <CopyDesc>Fashionista</CopyDesc>
               <CopyDesc>CLININCAL PSYCHOLOGIST TO BE</CopyDesc>
               <CopyDesc>SNACK MONSTER</CopyDesc>
             </IndGrid>
             <IndGrid>
-              <Img fluid={frontmatter.judith.childImageSharp.fluid} />
+              <ImageContainer>
+                <Img fluid={frontmatter.judith.childImageSharp.fluid} />
+              </ImageContainer>
               <TitleDesc>Judith Han</TitleDesc>
               <CopyDesc>PLANT LADY</CopyDesc>
               <CopyDesc>POLICY MAKER IN THE MAKING</CopyDesc>
               <CopyDesc>Semi-pro masseuse</CopyDesc>
             </IndGrid>
             <IndGrid>
-              <Img fluid={frontmatter.sharon.childImageSharp.fluid} />
+              <ImageContainer>
+                <Img fluid={frontmatter.sharon.childImageSharp.fluid} />
+              </ImageContainer>
               <TitleDesc>Sharon Kim</TitleDesc>
               <CopyDesc>foodie</CopyDesc>
               <CopyDesc>adventurous</CopyDesc>
               <CopyDesc>pocket-sized</CopyDesc>
             </IndGrid>
             <IndGrid>
-              <Img fluid={frontmatter.shasa.childImageSharp.fluid} />
+              <ImageContainer>
+                <Img fluid={frontmatter.shasa.childImageSharp.fluid} />
+              </ImageContainer>
               <TitleDesc>Shasa Gil</TitleDesc>
               <CopyDesc>Likes Long drives</CopyDesc>
               <CopyDesc>effortlessly tan</CopyDesc>
@@ -208,6 +219,7 @@ const Container = styled.div`
 
 const ImageContainer = styled.div`
   max-width: 250px;
+  margin: 0 auto;
 `;
 
 const Image = styled.div`
@@ -261,6 +273,7 @@ const IndGrid = styled.div`
 
 const TitleDesc = styled.h1`
   font-family: Canela-thin;
+  margin: 20px;
 `;
 
 const CopyDesc = styled.p`

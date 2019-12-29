@@ -57,8 +57,8 @@ const StyledContainer = styled.div`
 
 const StyledEyebrow = styled.p`
   font-size: 20px;
-  font-weight: 600;
-  font-family: Canela-thin;
+  font-weight: 300;
+  font-family: Canela-Light;
   line-height: 29px;
   padding: 15px 70px;
   color: white;
@@ -71,8 +71,8 @@ const StyledEyebrow = styled.p`
 
 const StyledHeader = styled.h1`
   font-size: 90px;
-  font-weight: 600;
-  font-family: Canela-thin;
+  font-weight: 200;
+  font-family: Canela-Light;
   line-height: 120px;
   color: white;
   ${lessThan.tablet} {

@@ -49,9 +49,9 @@ const StyledHeader = styled.h1`
   letter-spacing: 0em;
   text-transform: none;
   color: black;
-  font-family: Canela-thin;
+  font-family: Canela-light;
   white-space: pre-wrap;
-  font-size: 2.35rem;
+  font-size: 37px;
   line-height: 1.5136;
 
   ${lessThan.tablet} {

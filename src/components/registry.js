@@ -167,7 +167,7 @@ const StyledInd3 = styled.div`
 `;
 
 const StyledEyebrow = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 100;
   color: black;
   font-family: Calibre-Light;
@@ -185,7 +185,7 @@ const StyledHeader = styled.h1`
   font-size: 40px;
   font-weight: 500;
   color: black;
-  font-family: Canela-thin;
+  font-family: Canela-light;
 
   ${lessThan.tablet} {
     font-size: 35px;
