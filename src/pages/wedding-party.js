@@ -88,8 +88,6 @@ const SecondPage = () => {
       }
     }
   `);
-
-  console.log(frontmatter);
   return (
     <Layout>
       <SEO title="Page two" />
@@ -229,8 +227,8 @@ const Image = styled.div`
 
 const Header = styled.h1`
   padding: 200px 0;
-  font-family: Canela-thin;
-  font-weight: 600;
+  font-family: Canela-light;
+  font-weight: 300;
   font-size: 90px;
   color: black;
   background-color: #ffffff73;
@@ -243,7 +241,7 @@ const PeopleContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: Canela-thin;
+  font-family: Canela-light;
   font-size: 60px;
   font-weight: 300;
 `;
@@ -272,7 +270,8 @@ const IndGrid = styled.div`
 `;
 
 const TitleDesc = styled.h1`
-  font-family: Canela-thin;
+  font-family: Canela-light;
+  font-weight: 300;
   margin: 20px;
 `;
 

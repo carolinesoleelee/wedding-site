@@ -1,5 +1,6 @@
 ---
 section: Image
 headerImage: ../images/header.jpg
-background: ../images/leaf-pattern.jpg
+background1: ../images/golf.jpg
+background2: ../images/marble.jpg
 ---

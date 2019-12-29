@@ -1,24 +1,11 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { graphql, useStaticQuery } from 'gatsby';
 import { lessThan } from '../constants/mediaQ';
-import Img from 'gatsby-image';
 
-const faq = () => {
-  //   const {
-  //     markdownRemark: { frontmatter },
-  //   } = useStaticQuery(graphql`
-  //     query {
-  //       markdownRemark(frontmatter: { section: { eq: "Groomsmen" } }) {
-
-  //       }
-  //     }
-  //   `);
-
-  //   console.log(frontmatter);
+const Faq = () => {
   return (
     <Layout>
       <SEO title="Page two" />
@@ -80,7 +67,7 @@ const faq = () => {
   );
 };
 
-export default faq;
+export default Faq;
 
 const Container = styled.div`
   text-align: left;
@@ -88,10 +75,14 @@ const Container = styled.div`
 
 const BoxContainer = styled.div`
   margin: 0 26rem 0 55px;
+
+  ${lessThan.tablet} {
+    margin: 0px 30px;
+  }
 `;
 
 const Image = styled.div`
-  background-image: url('/static/a4eb371c9bfb0ff7dfc1ab8e5e8dd37b/b17c1/leaf-pattern.jpg');
+  background-image: url('/static/81288da13f6ab43d9a0013ccd55030c1/2baa7/golf.jpg');
   background-size: cover;
 `;
 
@@ -102,7 +93,6 @@ const Header = styled.h1`
   font-size: 90px;
   color: black;
   text-align: center;
-  background-color: #ffffff73;
 `;
 
 const PeopleContainer = styled.div`
@@ -116,6 +106,9 @@ const Title = styled.h1`
   font-size: 40px;
   font-weight: 300;
   margin-bottom: 10px;
+  ${lessThan.tablet} {
+    font-size: 30px;
+  }
 `;
 
 const CopyDesc = styled.p`
@@ -123,6 +116,9 @@ const CopyDesc = styled.p`
   font-size: 18px;
   padding: 0px;
   margin: 0px;
+  ${lessThan.tablet} {
+    font-size: 15px;
+  }
 `;
 const CopyTop = styled.p`
   font-family: Calibre-Medium;

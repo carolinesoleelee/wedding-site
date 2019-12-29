@@ -2,16 +2,29 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery } from 'gatsby';
 import { lessThan } from '../constants/mediaQ';
-import { format } from 'url';
 
-const hero = () => {
+const Hero = () => {
   const {
     markdownRemark: { frontmatter },
   } = useStaticQuery(graphql`
     query {
       markdownRemark(frontmatter: { section: { eq: "Image" } }) {
         frontmatter {
+          background1 {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           headerImage {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          background2 {
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid
@@ -23,7 +36,7 @@ const hero = () => {
     }
   `);
 
-  console.log(frontmatter.headerImage.childImageSharp);
+  console.log(frontmatter);
   return (
     <StyledContainer>
       <ContentContainer>
@@ -35,7 +48,7 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;
 
 const ContentContainer = styled.div`
   margin: 0 auto;

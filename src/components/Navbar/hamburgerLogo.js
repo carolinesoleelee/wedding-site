@@ -15,10 +15,6 @@ const StyledHamburgerLogo = styled.button`
   display: block;
   z-index: 3;
   top: 30px;
-  /* ${greaterThan.tablet} {
-    top: 40px;
-    left: calc(100vw - 140px);
-  } */
 `;
 
 const SpanContainer = styled.span`

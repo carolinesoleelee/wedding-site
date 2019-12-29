@@ -11,10 +11,6 @@ const StyledLogo = styled.a`
   transition: transform 0.2s ease-in-out 0.1s;
   top: 30px;
   left: 30px;
-  /* ${greaterThan.tablet} {
-    top: 40px;
-    left: 80px;
-  } */
 `;
 
 const SpanContainer = styled.span`
