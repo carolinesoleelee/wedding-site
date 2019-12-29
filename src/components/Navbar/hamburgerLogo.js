@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {HamburgerLogoIcon} from '../../icons/svgs';
+import { HamburgerLogoIcon } from '../../icons/svgs';
 import HamburgerMenu from './NavModal/hamburgerMenu';
 
 const StyledHamburgerLogo = styled.button`

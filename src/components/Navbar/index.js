@@ -1,6 +1,6 @@
-import React from "react"
-import OurLogoSvg from "./ourLogo"
-import HamburgerSvg from "./hamburgerLogo"
+import React from 'react';
+import OurLogoSvg from './ourLogo';
+import HamburgerSvg from './hamburgerLogo';
 
 const NavSection = () => {
   return (
@@ -8,6 +8,6 @@ const NavSection = () => {
       <OurLogoSvg />
       <HamburgerSvg />
     </div>
-  )
-}
-export default NavSection
+  );
+};
+export default NavSection;

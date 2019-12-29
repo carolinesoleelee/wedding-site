@@ -1,13 +1,13 @@
-import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import Hero from "../components/hero"
-import SecondSection from "../components/secondSection"
-import LocationSection from "../components/locationSection"
-import Registry from "../components/registry"
-import Rsvp from "../components/rsvp"
+import React from 'react';
+import { Link } from 'gatsby';
+import Layout from '../components/layout';
+import Image from '../components/image';
+import SEO from '../components/seo';
+import Hero from '../components/hero';
+import SecondSection from '../components/secondSection';
+import LocationSection from '../components/locationSection';
+import Registry from '../components/registry';
+import Rsvp from '../components/rsvp';
 
 const IndexPage = () => (
   <Layout>
@@ -17,7 +17,7 @@ const IndexPage = () => (
     <LocationSection />
     <Registry />
     <Rsvp />
-  </Layout> 
-)
+  </Layout>
+);
 
-export default IndexPage
+export default IndexPage;

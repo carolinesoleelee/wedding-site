@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {OurLogoIcon} from '../../icons/svgs';
+import { OurLogoIcon } from '../../icons/svgs';
 
 const StyledLogo = styled.a`
   cursor: pointer;
