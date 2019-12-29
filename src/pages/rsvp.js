@@ -24,7 +24,7 @@ const SecondPage = () => (
             </StyledInputContainer>
 
             <StyledInputContainer className="field half">
-                <label htmlFor="plusone">Email *</label>
+                <label htmlFor="email">Email *</label>
                 <StyledInput type="text" name="email" id="email" />
             </StyledInputContainer>
 
