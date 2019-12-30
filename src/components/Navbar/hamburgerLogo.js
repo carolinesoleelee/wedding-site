@@ -21,6 +21,7 @@ const SpanContainer = styled.span`
   display: block;
   padding-top: 20px;
   transition: width 0.3s ease-in-out 0s, padding-top 0.3s ease-in-out 0s;
+  color: grey;
 `;
 
 class HamburgerLogo extends React.Component {

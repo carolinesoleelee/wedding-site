@@ -18,7 +18,7 @@ const SecondPage = () => (
           sure it’s noted below.{' '}
         </Copy>
         <Copy>
-          <strong>Please RSVP by January 20, 2020</strong>
+          <strong>Please RSVP by January 31, 2020</strong>
         </Copy>
 
         <form

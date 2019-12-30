@@ -62,10 +62,7 @@ const StyledContainer = styled.div`
   background-image: url('/static/b9930882c55cc48cac44a2740a4079b3/2baa7/header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-
-  ${lessThan.tablet} {
-    background-position: center;
-  }
+  background-position: center;
 `;
 
 const StyledEyebrow = styled.p`

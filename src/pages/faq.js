@@ -34,8 +34,9 @@ const Faq = () => {
             <br /> <br />
             <Title>When is the RSVP deadline?</Title>
             <CopyDesc>
-              It would be helpful if we could get all responses by January 20th.
+              It would be helpful if we could get all responses by January 31th.
             </CopyDesc>
+            
             <br /> <br />
             <Title>Where do we park?</Title>
             <CopyDesc>

@@ -5,12 +5,12 @@ import { lessThan } from '../constants/mediaQ';
 const footer = () => {
   return (
     <ContentContainer>
-      <StyledHeader>Caroline & Chris |</StyledHeader>
-
-      <StyledHeader>Saturday, March 7, 2020 |</StyledHeader>
-
-      <StyledHeader>6:00pm |</StyledHeader>
-
+      <StyledHeader>Caroline & Chris </StyledHeader>
+      <Line>|</Line>
+      <StyledHeader>Saturday, March 7, 2020 </StyledHeader>
+      <Line>|</Line>
+      <StyledHeader>Six in the Evening</StyledHeader>
+      <Line>|</Line>
       <StyledHeader>The Great Room at Historic Savage Mill</StyledHeader>
     </ContentContainer>
   );
@@ -22,10 +22,12 @@ const ContentContainer = styled.div`
     margin: 0 auto;
     max-width: 1100px;
     text-align: center;
-    padding: 60px 0 30px;
+    padding: 60px 0;
 
     ${lessThan.tablet} {
         padding: 40px 0 30px;
+        display: grid;
+        grid-template-columns: 100%
     }
 }`;
 
@@ -39,14 +41,23 @@ const StyledEyebrow = styled.p`
   color: black;
 `;
 
+const Line = styled.span`
+  font-size: 30px;
+  font-family: Canela-Light;
+  ${lessThan.tablet} {
+    display: none;
+  }
+`;
+
 const StyledHeader = styled.span`
-  font-size: 27px;
+  font-size: 22px;
   font-weight: 100;
   color: black;
-  font-family: Canela-Thin;
+  font-family: Canela-Light;
+  padding: 0 12px;
 
   ${lessThan.tablet} {
     font-size: 19px;
-    padding: 0 10px;
+    padding: 0px;
   }
 `;
