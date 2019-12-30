@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import { graphql, useStaticQuery } from 'gatsby';
 import SEO from '../components/seo';
 import Img from 'gatsby-image';
+import { lessThan } from '../constants/mediaQ';
 
 const Gallery = () => {
   const {
@@ -62,4 +63,7 @@ const Header = styled.h1`
 
 const ImageContainer = styled.div`
   margin: 50px 220px;
+  ${lessThan.tablet} {
+    margin: 20px 30px;
+  }
 `;
