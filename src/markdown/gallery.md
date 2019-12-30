@@ -1,0 +1,23 @@
+---
+section: Gallery
+images:
+  - ../images/galleryImages/image1.jpg
+  - ../images/galleryImages/image2.jpg
+  - ../images/galleryImages/image4.jpg
+  - ../images/galleryImages/image6.jpg
+  - ../images/galleryImages/image7.jpg
+  - ../images/galleryImages/image8.jpg
+  - ../images/galleryImages/image9.jpg
+  - ../images/galleryImages/image10.jpg
+  - ../images/galleryImages/image11.jpg
+  - ../images/galleryImages/image3.jpg
+  - ../images/galleryImages/image12.jpg
+  - ../images/galleryImages/image13.jpg
+  - ../images/galleryImages/image14.jpg
+  - ../images/galleryImages/image15.jpg
+  - ../images/galleryImages/image16.jpg
+  - ../images/galleryImages/image17.jpg
+  - ../images/galleryImages/image18.jpg
+  - ../images/galleryImages/image19.jpg
+  - ../images/galleryImages/image5.jpg
+---
