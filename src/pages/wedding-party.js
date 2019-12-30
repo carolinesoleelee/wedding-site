@@ -90,7 +90,7 @@ const SecondPage = () => {
   `);
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title="Wedding Party" />
       <Container>
         <PeopleContainer>
           <Image>

@@ -28,7 +28,7 @@ const Gallery = () => {
   return (
     <Layout>
       <Container>
-        <SEO title="404: Not found" />
+        <SEO title="Gallery" />
         <Header>
           Much thanks to the talented Jaxon Kim for the beautiful photography
         </Header>

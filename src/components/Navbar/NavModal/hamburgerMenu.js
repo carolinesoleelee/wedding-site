@@ -5,13 +5,9 @@ const HamburgerMenu = props => {
   return (
     <ModalContainer active={props.active}>
       <ModalContent>
-        <ModalHeader>
-          <StyledHeaderInd>Take me to...</StyledHeaderInd>
-        </ModalHeader>
-
         <Test>
           <StyledContentInd key="" href="/rsvp">
-            RSVP
+            <Amazing>RSVP</Amazing>
           </StyledContentInd>
           <StyledContentInd key="" href="/our-story">
             Our Story
@@ -19,8 +15,11 @@ const HamburgerMenu = props => {
           <StyledContentInd key="" href="/wedding-party">
             Wedding Party
           </StyledContentInd>
+          <StyledContentInd key="" href="/gallery">
+            Engagement Photos
+          </StyledContentInd>
           <StyledContentInd key="" href="/faq">
-            FAQ
+            <Amazing>FAQ</Amazing>
           </StyledContentInd>
           <StyledContentInd key="" href="/">
             Back to Home
@@ -70,7 +69,7 @@ const StyledHeaderInd = styled.div`
   padding: 0px 8px;
   line-height: 4em;
   color: #6f737d;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   font-size: 15px;
   transition: color 0.2s linear 0s;
 `;
@@ -79,14 +78,18 @@ const Test = styled.div`
   display: grid;
 `;
 
+const Amazing = styled.div`
+  letter-spacing: 5px;
+`;
+
 const StyledContentInd = styled.a`
   margin: 0px;
   padding: 0px 0px;
-  line-height: 135px;
+  line-height: 136px;
   color: #6f737d;
   border-top: 1px solid rgba(67, 69, 77, 0.1);
-  font-size: 35px;
-  font-family: Canela-thin;
+  font-size: 30px;
+  font-family: Canela-light;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.5s linear 0s, background-color 0.4s ease-in-out 0s;

@@ -7,7 +7,7 @@ import { lessThan } from '../constants/mediaQ';
 const Faq = () => {
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title="F A Q" />
       <Container>
         <PeopleContainer>
           <Image>

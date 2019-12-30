@@ -7,7 +7,7 @@ import { lessThan } from '../constants/mediaQ';
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page three" />
+    <SEO title="R S V P" />
     <Container>
       <ContentContainer>
         <Title>R S V P</Title>
