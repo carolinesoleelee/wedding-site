@@ -51,7 +51,11 @@ const SecondPage = () => (
 
           <StyledInputContainer className="field half">
             <label htmlFor="plusone">
-              Will you be bringing any guests? (See <a href="/FAQ">FAQ</a>) *
+              Will you be bringing any guests? (See{' '}
+              <a href="/faq" style={{ color: 'white' }}>
+                FAQ
+              </a>
+              ) *
             </label>
             <StyledInput type="text" name="plusone" id="plusone" />
           </StyledInputContainer>

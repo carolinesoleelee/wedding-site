@@ -3,8 +3,28 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { lessThan } from '../constants/mediaQ';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const Faq = () => {
+  const {
+    markdownRemark: { frontmatter },
+  } = useStaticQuery(graphql`
+    query {
+      markdownRemark(frontmatter: { section: { eq: "Image" } }) {
+        frontmatter {
+          background1 {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  console.log(frontmatter);
   return (
     <Layout>
       <SEO title="F A Q" />
@@ -16,7 +36,13 @@ const Faq = () => {
           <BoxContainer>
             <CopyTop>
               FOR ANY ADDITIONAL QUESTIONS PLEASE{' '}
-              <a href="google.com">REACH OUT</a>.
+              <a
+                href="mailto: carolinechris20@gmail.com"
+                style={{ color: 'white' }}
+              >
+                REACH OUT
+              </a>
+              .
             </CopyTop>
             <br /> <br />
             <Title>Can I bring kids to the wedding?</Title>
@@ -36,7 +62,6 @@ const Faq = () => {
             <CopyDesc>
               It would be helpful if we could get all responses by January 31th.
             </CopyDesc>
-            
             <br /> <br />
             <Title>Where do we park?</Title>
             <CopyDesc>
@@ -85,7 +110,7 @@ const BoxContainer = styled.div`
 `;
 
 const Image = styled.div`
-  background-image: url('/static/81288da13f6ab43d9a0013ccd55030c1/2baa7/golf.jpg');
+  background-image: url('/static/9098ea6e751eae291325ad0b01c57270/2baa7/golf.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 `;
@@ -95,7 +120,7 @@ const Header = styled.h1`
   font-family: Canela-light;
   font-weight: 300;
   font-size: 90px;
-  color: white;
+  color: rgb(185, 162, 119);
   letter-spacing: 5px;
   text-align: center;
 `;

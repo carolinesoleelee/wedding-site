@@ -39,11 +39,13 @@ const Hero = () => {
   console.log(frontmatter);
   return (
     <StyledContainer>
-      <ContentContainer>
-        <StyledEyebrow>March 7th, 2020</StyledEyebrow>
-        <StyledHeader>Caroline & Chris</StyledHeader>
-        <StyledEyebrow>We’re Getting Married! </StyledEyebrow>
-      </ContentContainer>
+      <Tad>
+        <ContentContainer>
+          <StyledEyebrow>March 7th, 2020</StyledEyebrow>
+          <StyledHeader>Caroline & Chris</StyledHeader>
+          <StyledEyebrow>We’re Getting Married! </StyledEyebrow>
+        </ContentContainer>
+      </Tad>
     </StyledContainer>
   );
 };
@@ -56,6 +58,10 @@ const ContentContainer = styled.div`
   text-align: center;
   min-height: 100vh;
   padding-top: 245px;
+`;
+
+const Tad = styled.div`
+  background-color: #00000021;
 `;
 
 const StyledContainer = styled.div`
