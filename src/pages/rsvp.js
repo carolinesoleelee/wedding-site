@@ -90,6 +90,7 @@ const ContentContainer = styled.div`
 
   ${lessThan.tablet} {
     max-width: 370px;
+    margin: 0 25px;
   }
 `;
 

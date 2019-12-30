@@ -92,10 +92,10 @@ const SecondPage = () => {
     <Layout>
       <SEO title="Page two" />
       <Container>
-        <Image>
-          <Header>Our Wedding Party</Header>
-        </Image>
         <PeopleContainer>
+          <Image>
+            <Header>Our Wedding Party</Header>
+          </Image>
           <div>
             <Title>Groomsmen</Title>
             <GridContainer>
@@ -221,29 +221,30 @@ const ImageContainer = styled.div`
 `;
 
 const Image = styled.div`
-  background-image: url('/static/a4eb371c9bfb0ff7dfc1ab8e5e8dd37b/b17c1/leaf-pattern.jpg');
+  background-image: url('/static/6a698b8c8fc134b4a02efe77d6be6270/2baa7/marble.jpg');
   background-size: cover;
 `;
 
 const Header = styled.h1`
-  padding: 200px 0;
+  padding: 150px 0;
   font-family: Canela-light;
   font-weight: 300;
   font-size: 90px;
-  color: black;
+  color: rgb(197, 197, 197);
   background-color: #ffffff73;
 `;
 
 const PeopleContainer = styled.div`
   background-color: rgb(185, 162, 119);
   color: white;
-  padding: 60px 0px;
+  padding: 0px;
 `;
 
 const Title = styled.h1`
-  font-family: Canela-light;
+  font-family: Canela-thin;
   font-size: 60px;
   font-weight: 300;
+  padding-top: 50px;
 `;
 
 const Line = styled.div`

@@ -13,13 +13,13 @@ const HamburgerMenu = props => {
           <StyledContentInd key="" href="/rsvp">
             RSVP
           </StyledContentInd>
-          <StyledContentInd key="" href="">
+          <StyledContentInd key="" href="/our-story">
             Our Story
           </StyledContentInd>
           <StyledContentInd key="" href="/wedding-party">
             Wedding Party
           </StyledContentInd>
-          <StyledContentInd key="" href="">
+          <StyledContentInd key="" href="/faq">
             FAQ
           </StyledContentInd>
           <StyledContentInd key="" href="/">

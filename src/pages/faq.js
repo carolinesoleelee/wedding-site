@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { graphql, useStaticQuery } from 'gatsby';
 import { lessThan } from '../constants/mediaQ';
 
 const Faq = () => {
@@ -10,12 +9,15 @@ const Faq = () => {
     <Layout>
       <SEO title="Page two" />
       <Container>
-        <Image>
-          <Header>FAQ</Header>
-        </Image>
         <PeopleContainer>
+          <Image>
+            <Header>FAQ</Header>
+          </Image>
           <BoxContainer>
-            <CopyTop>FOR ANY ADDITIONAL QUESTIONS PLEASE REACH OUT.</CopyTop>
+            <CopyTop>
+              FOR ANY ADDITIONAL QUESTIONS PLEASE{' '}
+              <a href="google.com">REACH OUT</a>.
+            </CopyTop>
             <br /> <br />
             <Title>Can I bring kids to the wedding?</Title>
             <CopyDesc>
@@ -74,7 +76,7 @@ const Container = styled.div`
 `;
 
 const BoxContainer = styled.div`
-  margin: 0 26rem 0 55px;
+  margin: 0 30rem 0 55px;
 
   ${lessThan.tablet} {
     margin: 0px 30px;
@@ -84,21 +86,23 @@ const BoxContainer = styled.div`
 const Image = styled.div`
   background-image: url('/static/81288da13f6ab43d9a0013ccd55030c1/2baa7/golf.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 `;
 
 const Header = styled.h1`
-  padding: 200px 0;
-  font-family: Canela-thin;
-  font-weight: 600;
+  padding: 150px 0;
+  font-family: Canela-light;
+  font-weight: 300;
   font-size: 90px;
-  color: black;
+  color: white;
+  letter-spacing: 5px;
   text-align: center;
 `;
 
 const PeopleContainer = styled.div`
   background-color: rgb(185, 162, 119);
   color: white;
-  padding: 60px 0px;
+  padding: 0px;
 `;
 
 const Title = styled.h1`

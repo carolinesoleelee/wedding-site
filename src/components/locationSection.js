@@ -98,9 +98,10 @@ const StyledTitle = styled.h1`
   line-height: 50px;
 
   ${lessThan.tablet} {
-    font-size: 28px;
+    font-size: 33px;
     padding-bottom: 0px;
-    font-weight: 600;
+    font-weight: 200;
+    line-height: 40px;
   }
 `;
 
@@ -114,6 +115,6 @@ const StyledDetail = styled.p`
 
   ${lessThan.tablet} {
     font-size: 18px;
-    line-height: 17px;
+    line-height: 25px;
   }
 `;
