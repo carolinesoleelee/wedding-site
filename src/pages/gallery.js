@@ -49,8 +49,8 @@ const Gallery = () => {
 export default Gallery;
 
 const Container = styled.div`
-  background-color: rgb(185, 162, 119);
-  color: white;
+  background-color: white;
+  color: black;
   padding: 150px 0 80px;
 `;
 
