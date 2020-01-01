@@ -30,10 +30,8 @@ const OurStory = () => {
     <Layout>
       <Container>
         <SEO title="Comic" />
-        <Header>
-          Check in next week for the full comic and story! <br /> Here is a
-          sneak peak below:
-        </Header>
+        <Header>Check in next week for the full comic and story!</Header>
+        <Header>Here is a sneak peak below:</Header>
         {comicImages.map(image => (
           <ImageContainer key={image.id}>
             <Img
@@ -60,7 +58,10 @@ const Header = styled.h1`
   font-weight: 200;
   font-size: 28px;
   text-align: center;
-  line-height: 45px;
+
+  ${lessThan.tablet} {
+    margin: 0 20px;
+  }
 `;
 
 const ImageContainer = styled.div`

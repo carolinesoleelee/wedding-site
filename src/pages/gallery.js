@@ -59,6 +59,9 @@ const Header = styled.h1`
   font-weight: 200;
   font-size: 28px;
   text-align: center;
+  ${lessThan.tablet} {
+    margin: 0 20px;
+  }
 `;
 
 const ImageContainer = styled.div`
