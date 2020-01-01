@@ -17,8 +17,8 @@ const registry = () => {
           opt for that.
         </StyledEyebrow>
       </ContentContainer>
-
       <StyledContainer>
+        <div></div>
         <a
           href="https://www.amazon.com/wedding/share/chriscaroline"
           target="_blank"
@@ -77,6 +77,8 @@ const registry = () => {
             </svg>
           </StyledInd3>
         </a>
+
+        <div></div>
       </StyledContainer>
     </>
   );
@@ -93,12 +95,11 @@ const ContentContainer = styled.div`
 
 const StyledContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto 25% 25% 25% auto;
   padding-bottom: 100px;
-  margin: 0 260px;
 
   ${lessThan.tablet} {
-    margin: 0 45px;
+    margin: 0 25px;
   }
 `;
 
@@ -108,7 +109,7 @@ const StyledInd = styled.div`
   -moz-transition: color 0.23s ease-in-out;
   -webkit-transition: color 0.23s ease-in-out;
 
-  max-width: 150px;
+  max-width: 120px;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -129,7 +130,7 @@ const StyledInd2 = styled.div`
   transition: color 0.23s ease-in-out;
   -moz-transition: color 0.23s ease-in-out;
   -webkit-transition: color 0.23s ease-in-out;
-  max-width: 150px;
+  max-width: 130px;
 
   position: relative;
   left: 50%;
