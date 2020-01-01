@@ -109,7 +109,7 @@ const StyledInd = styled.div`
   -moz-transition: color 0.23s ease-in-out;
   -webkit-transition: color 0.23s ease-in-out;
 
-  max-width: 120px;
+  max-width: 110px;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -139,7 +139,7 @@ const StyledInd2 = styled.div`
   transform: translateX(-50%);
 
   &:hover {
-    color: #b1cde6;
+    color: #0070ba;
   }
 
   ${lessThan.tablet} {
@@ -151,7 +151,7 @@ const StyledInd3 = styled.div`
   transition: color 0.23s ease-in-out;
   -moz-transition: color 0.23s ease-in-out;
   -webkit-transition: color 0.23s ease-in-out;
-  max-width: 150px;
+  max-width: 140px;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
