@@ -55,7 +55,9 @@ const Faq = () => {
             <Title>Can I bring a date?</Title>
             <CopyDesc>
               In order to manage the guest count we ask that only those who are
-              engaged or married bring a plus one to the wedding.
+              engaged or married bring a guest to the wedding. Your digital
+              invite should have specified whether an additional guest was
+              included. If you have any questions, please reach out!
             </CopyDesc>
             <br /> <br />
             <Title>When is the RSVP deadline?</Title>
