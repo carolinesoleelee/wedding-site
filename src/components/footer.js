@@ -25,9 +25,9 @@ const ContentContainer = styled.div`
     padding: 60px 0;
 
     ${lessThan.tablet} {
-        padding: 40px 0 30px;
-        display: grid;
-        grid-template-columns: 100%
+    padding: 40px 0 30px;
+    display: grid;
+    grid-template-columns: 100%;
     }
 }`;
 
@@ -59,5 +59,6 @@ const StyledHeader = styled.span`
   ${lessThan.tablet} {
     font-size: 19px;
     padding: 0px;
+    line-height: 30px;
   }
 `;
