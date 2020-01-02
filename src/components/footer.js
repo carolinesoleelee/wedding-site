@@ -12,6 +12,7 @@ const footer = () => {
       <StyledHeader>Six in the Evening</StyledHeader>
       <Line>|</Line>
       <StyledHeader>The Great Room at Historic Savage Mill</StyledHeader>
+      <Reserve>Designed and Developed by Chris and Caroline</Reserve>
     </ContentContainer>
   );
 };
@@ -61,4 +62,11 @@ const StyledHeader = styled.span`
     padding: 0px;
     line-height: 30px;
   }
+`;
+
+const Reserve = styled.div`
+  margin: 0 auto;
+  font-family: Canela-Light;
+  padding-top: 20px;
+  font-size: 15px;
 `;
