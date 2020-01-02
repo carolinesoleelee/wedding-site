@@ -40,12 +40,16 @@ const SecondPage = () => (
             <StyledInput type="text" name="email" id="email" />
           </StyledInputContainer>
 
-          <StyledInputContainer className="field half half">
+          <StyledInputContainer className="field half half mid">
             <label htmlFor="attending">Will you be attending? *</label>
             <br />
             <StyledSelect className="field last">
-              <option htmlFor="yes">Yes</option>
-              <option htmlFor="no">No</option>
+              <option value="yes" htmlFor="yes">
+                Yes
+              </option>
+              <option value="no" htmlFor="no">
+                No
+              </option>
             </StyledSelect>
           </StyledInputContainer>
 
