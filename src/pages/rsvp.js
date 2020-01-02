@@ -43,7 +43,7 @@ const SecondPage = () => (
           <StyledInputContainer className="field half half mid">
             <label htmlFor="attending">Will you be attending? *</label>
             <br />
-            <StyledSelect className="field last">
+            <StyledSelect name="select" id="select" className="field last">
               <option value="yes" htmlFor="yes">
                 Yes
               </option>
