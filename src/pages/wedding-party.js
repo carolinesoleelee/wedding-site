@@ -172,7 +172,7 @@ const SecondPage = () => {
               </ImageContainer>
               <TitleDesc>Jessica Han</TitleDesc>
               <CopyDesc>Fashionista</CopyDesc>
-              <CopyDesc>IOS PSYCHOLOGIST TO BE</CopyDesc>
+              <CopyDesc>I/O PSYCHOLOGIST TO BE</CopyDesc>
               <CopyDesc>SNACK MONSTER</CopyDesc>
             </IndGrid>
             <IndGrid>
